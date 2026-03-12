@@ -90,7 +90,7 @@ variable "datadog_shared_volume" {
 
 variable "datadog_sidecar" {
   type = object({
-    image = optional(string, "gcr.io/datadoghq/serverless-init:latest")
+    image = optional(string, "gcr.io/datadoghq/serverless-init:1.9.6")
     name  = optional(string, "datadog-sidecar")
     resources = optional(object({
       limits = optional(object({
